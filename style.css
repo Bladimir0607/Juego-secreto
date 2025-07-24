@@ -11,6 +11,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px; /* Espacio para que no quede pegado en móviles */
+    box-sizing: border-box;
 }
 
 
@@ -103,6 +105,17 @@ h1 {
 p,
 button {
     font-family: 'Inter', sans-serif;
+}
+
+/* Media query para pantallas muy pequeñas (menos de 320px ancho) */
+@media (max-width: 320px) {
+     .container {
+        padding: 20px 15px; /* Menos padding para mejor ajuste */
+        width: 100%; /* Ocupa todo el ancho */
+        }
+        .container img {
+        width: 80px; /* Logo más pequeño para caber */
+        }
 }
 
 .texto__parrafo {
